@@ -29,6 +29,131 @@
     
     
     <entry>
+      <title>OJ1030: 逻辑与运算</title>
+      <link href="/2022/10/25/OJ1030/"/>
+      <url>/2022/10/25/OJ1030/</url>
+      
+        <content type="html"><![CDATA[<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>and运算和or运算</p><h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>第一行输入一个整数n(n&gt;&#x3D;0)，表示有n个例子。<br>接下来每行第一个代表x,，x等于1,接下来的数做and运算，x等于0接下来的数做or运算。</p><h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>输出每列结果</p><h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">2</span></span><br><span class="line"><span class="number">1</span> <span class="number">1</span> <span class="number">1</span></span><br><span class="line"><span class="number">0</span> <span class="number">1</span> <span class="number">2</span></span><br></pre></td></tr></table></figure><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">3</span></span><br></pre></td></tr></table></figure><h4 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">  </span><br><span class="line"> <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner in=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="keyword">while</span>(in.hasNext()) &#123;</span><br><span class="line">            <span class="type">int</span> i=in.nextInt();</span><br><span class="line">            <span class="keyword">while</span>(i--&gt;<span class="number">0</span>) &#123;</span><br><span class="line">                <span class="type">int</span> x=in.nextInt();</span><br><span class="line">                <span class="type">int</span> a=in.nextInt();</span><br><span class="line">                <span class="type">int</span> b=in.nextInt();</span><br><span class="line">                <span class="keyword">if</span>(x==<span class="number">1</span>) &#123;</span><br><span class="line">                    System.out.println(a&amp;b);</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">else</span> &#123;</span><br><span class="line">                    System.out.println(a|b);</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        in.close();</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OJ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OJ1029: Excel列号计算</title>
+      <link href="/2022/10/25/OJ1029/"/>
+      <url>/2022/10/25/OJ1029/</url>
+      
+        <content type="html"><![CDATA[<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>用过Excel的同学都知道，Excel的列是从ABC到XYZ这样编排的。Z后面的列名从AA AB AC 依次类推。<br>给你一个10进制的列号，你能编程输出对应的Excel中用26个字母表示的列名吗？</p><h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>输入一个数字n(1&lt;&#x3D;n&lt;&#x3D;1000000)</p><h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>输出该数字excel列号</p><h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1</span></span><br><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">26</span></span><br><span class="line"><span class="number">27</span></span><br><span class="line"><span class="number">767</span></span><br></pre></td></tr></table></figure><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">A</span><br><span class="line">D</span><br><span class="line">Z</span><br><span class="line">AA</span><br><span class="line">ACM</span><br></pre></td></tr></table></figure><h4 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">  </span><br><span class="line"> <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner in=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="type">char</span> str=<span class="number">0</span>;</span><br><span class="line">        String res=<span class="string">&quot;&quot;</span>;</span><br><span class="line">        <span class="keyword">while</span>(in.hasNext()) &#123;</span><br><span class="line">            res=<span class="string">&quot;&quot;</span>;</span><br><span class="line">            <span class="type">long</span> a=in.nextLong();</span><br><span class="line"><span class="comment">//          if(a&lt;=26) &#123;</span></span><br><span class="line"><span class="comment">//              str=(char)(a+64);</span></span><br><span class="line"><span class="comment">//              System.out.println((char)str);</span></span><br><span class="line"><span class="comment">//          &#125;</span></span><br><span class="line">            <span class="keyword">if</span>(a&lt;=<span class="number">26</span>) &#123;</span><br><span class="line">                str=(<span class="type">char</span>)(a+<span class="number">64</span>);</span><br><span class="line">                res=String.valueOf(str)+res;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                <span class="keyword">while</span>(a&gt;<span class="number">0</span>) &#123;</span><br><span class="line">                    <span class="type">long</span> b=(a-<span class="number">1</span>)%<span class="number">26</span>+<span class="number">1</span>;</span><br><span class="line">                    str=(<span class="type">char</span>)(b+<span class="number">64</span>);</span><br><span class="line">                    res=String.valueOf(str)+res;</span><br><span class="line">                    a=(a-b)/<span class="number">26</span>;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println(res);</span><br><span class="line">        &#125;</span><br><span class="line">        in.close();</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OJ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OJ1028: 位运算</title>
+      <link href="/2022/10/25/OJ1028/"/>
+      <url>/2022/10/25/OJ1028/</url>
+      
+        <content type="html"><![CDATA[<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>位运算常用于二进制中，常见的位运算符有：‘&amp;’、‘|’、‘^’，<br>00111 &amp; 11100 &#x3D; 00100,<br>00111 | 11100 &#x3D; 11111,<br>00111 ^ 11100 &#x3D;11011,<br>现在给你两个十进制整数a、b,分别求出a&amp;b、a|b、a^b的值，结果以十进制打印出来。</p><h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>多组输入，每组输入两个整数a、b（0&lt;&#x3D;a、b&lt;&#x3D;100）.</p><h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>第一行输出a&amp;b的值，<br>第二行输出a|b的值，<br>第三行输出a^b的值。</p><h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">7</span> <span class="number">28</span></span><br></pre></td></tr></table></figure><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">4</span></span><br><span class="line"><span class="number">31</span></span><br><span class="line"><span class="number">27</span></span><br></pre></td></tr></table></figure><h4 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">  </span><br><span class="line"> <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner in=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="keyword">while</span>(in.hasNext()) &#123;</span><br><span class="line">            <span class="type">int</span> a=in.nextInt();</span><br><span class="line">            <span class="type">int</span> b=in.nextInt();</span><br><span class="line">            System.out.println(a&amp;b);</span><br><span class="line">            System.out.println(a|b);</span><br><span class="line">            System.out.println(a^b);</span><br><span class="line">        &#125;</span><br><span class="line">        in.close();</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OJ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OJ1027: 逻辑非运算</title>
+      <link href="/2022/10/25/OJ1027/"/>
+      <url>/2022/10/25/OJ1027/</url>
+      
+        <content type="html"><![CDATA[<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>众所周知，！代表非运算符，当a&#x3D;true时，！a&#x3D;false；同理，当a&#x3D;false时，！a&#x3D;true。</p><h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>多组输入，输入true 和false 和一个整数n（1&lt;&#x3D;n&lt;&#x3D;100）表示n个！运算<br>例如 false 3 表示 !!!false 结果是true</p><h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>true或者false</p><h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">false</span> <span class="number">3</span></span><br></pre></td></tr></table></figure><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="literal">true</span></span><br></pre></td></tr></table></figure><h4 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">  </span><br><span class="line"> <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner in=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        <span class="keyword">while</span>(in.hasNext()) &#123;</span><br><span class="line">            <span class="type">boolean</span> a=in.nextBoolean();</span><br><span class="line">            <span class="type">int</span> b=in.nextInt();</span><br><span class="line">            <span class="keyword">if</span>(b%<span class="number">2</span>==<span class="number">0</span>) &#123;</span><br><span class="line">                System.out.println(a);</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">else</span> &#123;</span><br><span class="line">                System.out.println(!a);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        in.close();</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OJ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>OJ1026: 十二生肖速算</title>
+      <link href="/2022/10/25/OJ1026/"/>
+      <url>/2022/10/25/OJ1026/</url>
+      
+        <content type="html"><![CDATA[<h4 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h4><p>给你一个年份，判断是什么年<br>rat 子鼠 ox 丑牛 tiger 寅虎 rabbit 卯兔 dragon 辰龙 snake 巳蛇 horse 午马 goat 未羊 monkey  申猴 rooster  酉鸡 dog 戌狗 pig 亥猪</p><h4 id="输入"><a href="#输入" class="headerlink" title="输入"></a>输入</h4><p>输入一个年份</p><h4 id="输出"><a href="#输出" class="headerlink" title="输出"></a>输出</h4><p>输出该年份的生肖</p><h4 id="样例输入"><a href="#样例输入" class="headerlink" title="样例输入"></a>样例输入</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1949</span></span><br></pre></td></tr></table></figure><h4 id="样例输出"><a href="#样例输出" class="headerlink" title="样例输出"></a>样例输出</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ox</span><br></pre></td></tr></table></figure><h4 id="答案"><a href="#答案" class="headerlink" title="答案"></a>答案</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> java.util.Scanner;</span><br><span class="line"> </span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Main</span> &#123;</span><br><span class="line">  </span><br><span class="line"> <span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">        Scanner in=<span class="keyword">new</span> <span class="title class_">Scanner</span>(System.in);</span><br><span class="line">        String c=<span class="literal">null</span>;</span><br><span class="line">        <span class="keyword">while</span>(in.hasNext()) &#123;</span><br><span class="line">            <span class="type">int</span> a=in.nextInt();</span><br><span class="line">            <span class="type">int</span> b=(a-<span class="number">4</span>)%<span class="number">12</span>+<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">if</span>(b==<span class="number">1</span>) &#123;</span><br><span class="line">                c=<span class="string">&quot;rat&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(b==<span class="number">2</span>) &#123;</span><br><span class="line">                c=<span class="string">&quot;ox&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(b==<span class="number">3</span>) &#123;</span><br><span class="line">                c=<span class="string">&quot;tiger&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(b==<span class="number">4</span>) &#123;</span><br><span class="line">                c=<span class="string">&quot;rabbit&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(b==<span class="number">5</span>) &#123;</span><br><span class="line">                c=<span class="string">&quot;dragon&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(b==<span class="number">6</span>) &#123;</span><br><span class="line">                c=<span class="string">&quot;snake&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(b==<span class="number">7</span>) &#123;</span><br><span class="line">                c=<span class="string">&quot;horse&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(b==<span class="number">8</span>) &#123;</span><br><span class="line">                c=<span class="string">&quot;goat&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(b==<span class="number">9</span>) &#123;</span><br><span class="line">                c=<span class="string">&quot;monkey&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(b==<span class="number">10</span>) &#123;</span><br><span class="line">                c=<span class="string">&quot;rooster&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(b==<span class="number">11</span>) &#123;</span><br><span class="line">                c=<span class="string">&quot;dog&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            <span class="keyword">if</span>(b==<span class="number">12</span>) &#123;</span><br><span class="line">                c=<span class="string">&quot;pig&quot;</span>;</span><br><span class="line">            &#125;</span><br><span class="line">            System.out.println(c);</span><br><span class="line">        &#125;</span><br><span class="line">        in.close();</span><br><span class="line">    &#125;</span><br><span class="line"> </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> JAVA </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> OJ </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>OJ1025: 模拟计算器</title>
       <link href="/2022/10/24/OJ1025/"/>
       <url>/2022/10/24/OJ1025/</url>
