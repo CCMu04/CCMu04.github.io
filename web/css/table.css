@@ -1,0 +1,142 @@
+.left {
+    float: left;
+    width: 12%;
+    height: max-content;
+    background-color: rgb(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+    position: fixed;
+}
+
+.left>h4 {
+    font-size: larger;
+    padding-bottom: 5px;
+    border-bottom: solid rgb(39, 247, 251) 2px;
+}
+
+.list>li {
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+li>a {
+    color: gray;
+}
+
+li>a:link {
+    color: gray;
+}
+
+li>a:visited {
+    color: gray;
+}
+
+.right {
+    float: right;
+    width: 80%;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.right>.header {
+    height: 60px;
+    width: 97%;
+    background-color: rgb(255, 255, 255, 0.3);
+    border-radius: 10px;
+    line-height: 60px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 20px;
+}
+
+.right>.red {
+    height: 40px;
+    width: 99%;
+    background-color: rgb(255, 0, 0, 0.3);
+    border-radius: 10px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.red>span {
+    float: right;
+    margin-right: 10px;
+}
+
+.right>.red>img {
+    width: 30px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.right>.green {
+    height: 40px;
+    width: 99%;
+    background-color: rgba(0, 255, 122, 0.3);
+    border-radius: 10px;
+    line-height: 38px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.green>span {
+    float: right;
+    margin-right: 10px;
+}
+
+.right>.green>img {
+    width: 30px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.right>.blue {
+    height: 40px;
+    width: 99%;
+    background-color: rgb(0, 0, 255, 0.3);
+    border-radius: 10px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.blue>span {
+    float: right;
+    margin-right: 10px;
+}
+
+.right>.blue>img {
+    width: 30px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+
+.right>.other {
+    height: 40px;
+    width: 99%;
+    font-size: large;
+    font-weight: bolder;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    line-height: 30px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    text-align: center;
+}
+
+.right>div>a {
+    color: black;
+    float: left;
+    padding-right: 10px;
+}
+
+.right>div>a:link {
+    color: black;
+}
+
+.right>div>a:visited {
+    color: black;
+}

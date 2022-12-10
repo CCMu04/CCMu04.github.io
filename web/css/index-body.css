@@ -1,0 +1,72 @@
+.left {
+    float: left;
+    width: 15%;
+    height: max-content;
+    background-color: rgb(255, 255, 255, 0.4);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.left-tittle {
+    font-size: larger;
+    padding-bottom: 5px;
+    border-bottom: solid rgb(39, 247, 251) 2px;
+}
+
+.news {
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+li>a {
+    padding-top: 10px;
+    font-size: 10px;
+}
+
+li>a:link {
+    color: black;
+}
+
+li>a:visited {
+    color: black;
+}
+
+.right {
+    float: right;
+    width: 80%;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.home-img {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.index-tittle {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.index-content>p {
+    padding-top: 10px;
+}
+
+.video {
+    float: left;
+    padding-right: 20px;
+}
+
+.video-content {
+    padding-bottom: 20px;
+}
+
+.video-content>h6 {
+    text-align: center;
+}
+
+.video-content>p {
+    padding-top: 10px;
+}

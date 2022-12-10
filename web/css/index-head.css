@@ -1,0 +1,49 @@
+.head {
+    height: 60px;
+    width: 100%;
+    line-height: 45px;
+    position: fixed;
+    top: 0;
+    font-weight: bolder;
+    background-color: #13B7E95F;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.icon {
+    float: left;
+    padding-left: 15px;
+    line-height: 70px;
+}
+
+.icontittle {
+    font-size: 25px;
+}
+
+.content {
+    float: right;
+    padding-right: 60px;
+    line-height: 60px;
+}
+
+.home {
+    padding-right: 20px;
+}
+
+.introduce {
+    padding-right: 20px;
+}
+
+.table {
+    padding-right: 20px;
+}
